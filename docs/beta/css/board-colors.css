@@ -1,0 +1,216 @@
+body > main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 832px) {
+    body > main {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
+div#style {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px auto 0;
+}
+
+@media only screen and (min-width: 389px) {
+    div#style {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    div#style {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 832px) {
+    div#style {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    div#colors,
+    div#shemas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 831px) {
+    div#colors,
+    div#shemas {
+        display: flex;
+    }
+}
+
+#style .row {
+    margin: 20px 0px;
+}
+
+@media only screen and (min-width: 896px) {
+    #style .row {
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 832px) {
+    .row.first {
+        margin-top: 0 !important;
+    }
+}
+
+div#style label {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+@media only screen and (min-width: 896px) {
+    div#style label {
+        margin: 0 30px;
+    }
+}
+
+.row.sheme {
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    height: 60px;
+}
+
+#style .row > div {
+    display: flex;
+}
+
+#style p {
+    margin-block: 8px;
+}
+
+/**/
+
+#style button,
+input[type="button"] {
+    background-color: #1d4e1d;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    font-size: inherit;
+    padding: 7px;
+}
+
+#style button:hover,
+input[type="button"]:hover {
+    background-color: #1e510f;
+}
+
+input[type="color"] {
+    box-sizing: content-box;
+    height: 64px;
+    width: 64px;
+    background-color: transparent;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media only screen and (min-width: 896px) {
+    input[type="color"] {
+        height: 72px;
+        width: 72px;
+    }
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 10px;
+    border: 5px solid #1d4e1d;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 10px;
+    border: 5px solid #1d4e1d;
+}
+
+@media only screen and (min-width: 896px) {
+    input[type="color"]::-webkit-color-swatch {
+        border-width: 7px;
+    }
+
+    input[type="color"]::-moz-color-swatch {
+        border-width: 7px;
+    }
+}
+
+input[type="color"]::-webkit-color-swatch:hover {
+    border-radius: 12.5px;
+    border: 7px solid #1e510f;
+}
+
+input[type="color"]::-moz-color-swatch:hover {
+    border-radius: 12.5px;
+    border: 7px solid #1e510f;
+}
+
+@media only screen and (min-width: 896px) {
+    input[type="color"]::-webkit-color-swatch:hover {
+        border-width: 9px;
+    }
+
+    input[type="color"]::-moz-color-swatch:hover {
+        border-width: 9px;
+    }
+}
+
+#shere-sheme button,
+#enter-sheme button {
+    width: 144px;
+}
+
+@media only screen and (max-width: 831px) {
+    #shere-sheme button,
+    #enter-sheme button {
+        margin: 0 22px;
+    }
+}
+
+@media only screen and (min-width: 896px) {
+    #shere-sheme button,
+    #enter-sheme button {
+        width: 192px;
+    }
+}
+
+#shere-sheme input[type="text"],
+#enter-sheme input[type="text"] {
+    box-sizing: border-box;
+    height: 40px;
+    width: 144px;
+    border: 2px solid #b9b8b2;
+    border-radius: 5px 0 0 5px;
+    background-color: #ddd9bd;
+    color: #1c201a;
+    font-size: 18px;
+}
+
+#shere-sheme input[type="text"] {
+    pointer-events: none;
+}
+
+#shere-sheme input[type="button"],
+#enter-sheme input[type="button"] {
+    box-sizing: border-box;
+    height: 40px;
+    width: 64px;
+    border-radius: 0 5px 5px 0;
+    font-size: 18px;
+}

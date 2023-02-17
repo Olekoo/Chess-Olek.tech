@@ -1,0 +1,121 @@
+div#control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+    div#control {
+        flex-wrap: wrap;
+    }
+}
+
+div#cross {
+    margin: 0 40px;
+}
+
+@media only screen and (max-width: 375px) {
+    div#cross {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    div#cross {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div#cross {
+        margin: 0 65px;
+    }
+}
+
+div#cross div.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div#cross div.cell,
+div#cross div.pseudo-cell {
+    display: inline;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+}
+
+div.cell {
+    cursor: pointer;
+}
+
+div.letter {
+    display: flex;
+    box-sizing: border-box;
+    height: 43.75px;
+    width: 43.75px;
+    border: 4.9px solid;
+    border-radius: 4.5px;
+    margin: 0 10px;
+    color: #d8d4b6;
+    font-size: 31.5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    div.letter {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    div.letter.a {
+        margin-left: 0;
+    }
+    div.letter.b {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    div.letter.a {
+        margin-right: 30px;
+    }
+    div.letter.b {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    div.letter {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.letter {
+        margin: 0 20px;
+    }
+}
+
+path {
+    fill: #d8d4b6;
+}
+
+path.hover {
+    fill: #a7a38c;
+}
+
+.letter:hover {
+    color: #a7a38c;
+}
